@@ -4,6 +4,7 @@
       <img class="profile-img img-cre" alt="{{actor.name}}" src="{{actor.img}}" title="{{actor.name}}" data-edit="img"/>
     </div>
     <div class="injuredbox">
+      <!--Rename Frightening to Fearsome?-->
       <div class="frightening">
         <input type="checkbox" name="data.frightening"
                id="data.frightening" class="checkbox"
@@ -14,6 +15,7 @@
       <div class="injuredtext">{{localize "DL.CreatureFrightening"}}</div>
     </div>
     <div class="injuredboxright">
+      <!--Remove Horrifying altogether?-->
       <div class="horrifying">
         <input type="checkbox" name="data.horrifying"
                id="data.horrifying" class="checkbox"
@@ -52,6 +54,7 @@
                                     value="{{data.characteristics.power}}" data-dtype="Number" placeholder=""/></div>
         </div>
       </div>
+      <!--Removing Size, Speed, Insansity, and Corruption; no longer stats in WW---------
       <div class="chars grid grid-2col">
         <div class="speedbox">
           <div class="speedtext">{{localize "DL.CharSize"}}</div>
@@ -77,6 +80,7 @@
                                     value="{{data.characteristics.corruption}}" data-dtype="Number"/></div>
         </div>
       </div>
+      -------------------------------------------------------------------------------->
     </div>
     <div class="armor">
       <input name="data.armor" type="text" value="{{data.armor}}" data-dtype="String"
