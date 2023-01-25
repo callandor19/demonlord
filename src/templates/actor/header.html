@@ -14,6 +14,7 @@
     {{#*inline "attribute-partial"}}
       <div class="col-2 attribute">
         <label class="name" data-key="{{n}}">{{attr.label}}</label>
+        <!----------------------------------------------Can I just remove the readonly attribute here to allow players to edit stats?-->
         <input type="Number" name="data.attributes.{{n}}.value" value="{{attr.value}}" readonly/>
         <label class="modifier">{{plusify attr.modifier}}</label>
       </div>
