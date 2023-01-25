@@ -32,10 +32,12 @@
       </div>
       <div class="injuredtext">{{localize "DL.CharHealthInjured"}}</div>
     </div>
+    <!------Removing Healing Rate, no longer a stat in WW-------------------
     <div class="healingratebox" style="cursor: pointer">
       <div class="healingrate">{{data.characteristics.health.healingrate}}</div>
       <div class="healingratetext">{{localize "DL.CharHealthHealingRating"}}</div>
     </div>
+    ----------------------------------------------------------------------->
     <div class="editBars">
       <a class="bar-edit" title="{{localize 'DL.ToogleBarView'}}"><i class="fas fa-edit"></i></a>
     </div>
@@ -55,6 +57,7 @@
             />
           </div>
         </div>
+        <!-----------Removing Insanity and Corruption, no longer stats in WW-----------------
         <div class="barbox">
           <div class="insanitytext">{{localize "DL.CharInsanity"}}</div>
           <div class="insanityedit">
@@ -69,6 +72,7 @@
             />
           </div>
         </div>
+        ---------------------------------------------------------------------
         <div class="barbox">
           <div class="corruptiontext">{{localize "DL.CharCorruption"}}</div>
           <div class="corruptionedit">
@@ -82,6 +86,7 @@
             />
           </div>
         </div>
+        ------------------------------------------------------------------->
       </div>
     {{else}}
       <div class="health">
@@ -92,6 +97,7 @@
         <div class="healtmax">{{data.characteristics.health.max}}</div>
         <div class="damage">{{data.characteristics.health.value}}</div>
       </div>
+    <!-----Removing Insanity and Corruption-------------------
       <div class="insanity">
         <div class="addInsanity">{{localize "DL.CharInsanity"}}</div>
         <div class="healthbar">
@@ -109,17 +115,21 @@
         <div class="corruptionvalue">{{data.characteristics.corruption}}</div>
         <a class="corruption-roll" title="{{localize 'DL.CharRolCorruption'}}"><i class="fas fa-dice-d20"></i></a>
       </div>
+    ------------------------------------------------------------>
     {{/if}}
     <div class="chars grid grid-2col">
       <div class="defensebox">
         <div class="defensetext">{{localize "DL.AttributeDefense"}}</div>
         <div class="defense">{{data.characteristics.defense}}</div>
       </div>
+      <!------Removing Power, no longer a stat in WW---------------
       <div class="powerbox">
         <div class="powertext">{{localize "DL.CharPower"}}</div>
         <div class="power">{{data.characteristics.power}}</div>
       </div>
+      ------------------------------------------------------------->
     </div>
+    <!---------Removing Speed and Speed section--------------------
     <div class="chars grid grid-2col">
       <div class="speedbox">
         <div class="speedtext">{{localize "DL.CharSize"}}</div>
@@ -145,6 +155,8 @@
       </div>
       <div></div>
     </div>
+    ---------------------------------------------------------------->
+    <!--Should we go ahead and remove fast/slow turn, or replace with Taking Initiative language?-->
     <div class="chars flexrow">
       <div class="turnmode">
         <label class="switchTurn">
